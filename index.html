@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1{
+        text-align:center;
+    }
+body {
+            background-color: #05c46b;
+            font-family: Verdana;
+        
+        }
+div {
+background-color:black;
+color:white;
+font-family:courier;
+padding:20px;
+border:2px solid white;
+}
+</style>
+
+</head>
+<body>
+<h1>Registration form</h1>
+<div style="border:1px solid #fff;width: 350px;margin:0 auto; height:400px; overflow:auto">
+<form action="/action_page.php">
+<label for="username">User Name:</label><br>
+<input type="text" id="username" name="username" style="width: 300px;" placeholder="Username/email"><br><br>
+<label for="pwd">Password</label>:</label><br>
+<input type="text" id="pwd" name="pwd" style="width: 300px;" placeholder="password"><br><br><br>
+<h3>Terms & Conditions</h3>
+<p>I have read all the Terms & Conditions and I agree</p>
+<input type="checkbox" id="agree" name="agree">
+<label for="agree">I agree</label><br><br>
+<button onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+document.getElementById("demo").innerHTML="Registered Successfully";
+}
+</script>
+</form>
+</div>
+</body>
+</html>
